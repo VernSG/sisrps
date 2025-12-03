@@ -77,6 +77,7 @@ Route::middleware(['auth'])->group(function () {
 
         // Lihat RPS
         Route::get('/rps', [\App\Http\Controllers\MahasiswaRpsController::class, 'index'])->name('rps.index');
+        Route::get('/rps/{rps}/download', [\App\Http\Controllers\MahasiswaRpsController::class, 'download'])->name('rps.download');
 
         // Lihat nilai (KHS)
         Route::get('/khs', [\App\Http\Controllers\MahasiswaKhsController::class, 'index'])->name('khs.index');
