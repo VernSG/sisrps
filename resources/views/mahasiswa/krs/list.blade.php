@@ -28,7 +28,7 @@
             <div class="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
                 <h3 class="text-lg font-semibold text-blue-800">{{ Auth::user()->name }}</h3>
                 @if(Auth::user()->mahasiswaProfile)
-                    <p class="text-blue-700">NIM: {{ Auth::user()->mahasiswaProfile->nim }}</p>
+                    <p class="text-blue-700">NIM: {{ Auth::user()->mahasiswaProfile->npm }}</p>
                 @endif
                 <p class="text-blue-600 mt-2">
                     <strong>Total Mata Kuliah:</strong> {{ $krsList->count() }} mata kuliah

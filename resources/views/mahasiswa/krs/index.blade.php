@@ -43,7 +43,7 @@
                             {{ Auth::user()->name }}
                         </h3>
                         @if(Auth::user()->mahasiswaProfile)
-                            <p class="text-blue-700">NIM: {{ Auth::user()->mahasiswaProfile->nim }}</p>
+                            <p class="text-blue-700">NIM: {{ Auth::user()->mahasiswaProfile->npm }}</p>
                         @endif
                     </div>
                     <div class="text-right">
